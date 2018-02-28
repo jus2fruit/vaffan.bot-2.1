@@ -695,15 +695,11 @@ bot.on('message', message => {
 
 
 let clear = require(`./command/clear.js`) 
-let mute = require(`./Command/mute.js`)
 
 if (command === "clear"){
     clear.exec(bot,message,params)
 }
 
-if (command === "mute") {
-	mute.exec(bot,message,params)
-}
 
  })
 
