@@ -51,7 +51,7 @@ bot.login(process.env.TOKEN);
     var bvn_embed = new discord.RichEmbed()
     .setAuthor(`== ! 🙌 BIENVENUE 🙌 ! ==`)
     .setColor("#ADCF4F")
-    .setDescription(`**${member.user.tag}** Amuse-toi bien parmis nous ! N'oublie pas d'aller lire les regles dans ${acceuil}\n\nSoyez polis, Souhaitez tous la bienvenue à notre nouvel arrivant ! Avec /bvn`)
+    .setDescription(`**${member.user.tag}** Amuse-toi bien parmis nous ! N'oublie pas d'aller lire les regles dans #acceuil\n\nSoyez polis, Souhaitez tous la bienvenue à notre nouvel arrivant ! Avec /bvn`)
     .setThumbnail(`${member.user.displayAvatarURL}`)
     .setTimestamp()
     .setFooter(`${bot.user.username}`, `${bot.user.displayAvatarURL}`);
