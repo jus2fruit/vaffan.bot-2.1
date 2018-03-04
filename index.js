@@ -88,7 +88,7 @@ bot.on ('message' , message => {
     const command = args.shift().toLowerCase();
    
 
-    i    if (message.content.startsWith ("ping")) {
+    if (message.content.startsWith ("ping")) {
         message.reply(`:ping_pong:  pong !`);
         console.log('ping pong !');
 
