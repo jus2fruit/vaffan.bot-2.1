@@ -88,44 +88,44 @@ bot.on ('message' , message => {
     const command = args.shift().toLowerCase();
    
 
-    if (message.content === "ping"){
+    i    if (message.content.startsWith ("ping")) {
         message.reply(`:ping_pong:  pong !`);
         console.log('ping pong !');
 
     }
-    if (message.content === "bonne nuit"){
+    if (message.content.startsWith ("bonne nuit")) {
         message.reply("bonne nuit à toi")
         console.log('bonne nuit')
     }
-    if (message.content === "Bonne nuit"){
+    if (message.content.startsWith ("Bonne nuit")){
          message.reply("bonne nuit à toi")
          console.log('bonne nuit')
     }
-    if (message.content === "test"){
+    if (message.content.startsWith ("test")){
         message.reply("tu test quoi la !!!")
         console.log('test')
     }
-    if (message.content === "bonjour"){
+    if (message.content.startsWith ("bonjour")){
         message.reply("bonjour!")
         console.log('bonjour')
     }
 
-    if (message.content === "Bonjour"){
+    if (message.content.startsWith ("Bonjour")){
         message.reply("bonjour!")
         console.log('bonjour')
     }
 
-    if (message.content === "bonsoir"){
+    if (message.content.startsWith ("bonsoir")){
         message.reply("bonsoir!")
         console.log('bonsoir')
     }
 
-    if (message.content === "Bonsoir"){
+    if (message.content.startsWith ("Bonsoir")){
         message.reply("bonsoir!")
         console.log('bonsoir')
     }
 
-    if (message.content === "ça va vaffan bot"){
+    if (message.content.startsWith ("ça va vaffan bot")){
         message.reply("oui, merci de te soucier de moi")
         console.log('sa va')
     }
