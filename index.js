@@ -383,7 +383,7 @@ bot.on ('message' , message => {
     }
 
     if (message.content === prefix + "site"){
-        message.author.send("https://vaffansquad.wixsite.com/vaffan-squad")
+        message.channel.send("https://vaffansquad.wixsite.com/vaffan-squad")
         console.log('site')
     }
 
@@ -677,11 +677,25 @@ bot.on('message', message => {
  });
  
  
+ bot.on('message', message => {
+    if (message.content.startsWith("/bvn")) {
+       message.delete(1000);
+       message.channel.send(":tada: | **" +  message.mentions.members.first() + "** vous souhaite la bienvenue !");
+    }
+ });
  
  bot.on('message', message => {
     if (message.content.startsWith("/salut")) {
        message.delete(1000);
        message.channel.send(":wave: | **" + message.author.username + "** vous fait un coucou !");
+    }
+ });
+
+
+ bot.on('message', message => {
+    if (message.content.startsWith("/salut")) {
+       message.delete(1000);
+       message.channel.send(":wave: | **" + message.mentions.members.first() + "** vous fait un coucou !");
     }
  });
 
