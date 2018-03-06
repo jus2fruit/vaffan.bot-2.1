@@ -89,7 +89,12 @@ bot.on ('message' , message => {
    
 
     if (message.content.startsWith ("ping")) {
-        message.reply(`:ping_pong:  pong !`);
+        channel.send(`:ping_pong:  pong !`);
+        console.log('ping pong !');
+
+    }
+    if (message.content.startsWith ("coco")) {
+        message.reply(`t foux ou quoi coco ?`);
         console.log('ping pong !');
 
     }
@@ -672,22 +677,7 @@ bot.on('message', message => {
  bot.on('message', message => {
     if (message.content.startsWith("/bvn")) {
        message.delete(1000);
-       message.channel.send(":tada: | **" + message.author.username + "** vous souhaite la bienvenue !");
-    }
- });
- 
- 
- bot.on('message', message => {
-    if (message.content.startsWith("/bvn")) {
-       message.delete(1000);
-       message.channel.send(":tada: | **" +  message.mentions.members.first() + "** vous souhaite la bienvenue !");
-    }
- });
- 
- bot.on('message', message => {
-    if (message.content.startsWith("/salut")) {
-       message.delete(1000);
-       message.channel.send(":wave: | **" + message.author.username + "** vous fait un coucou !");
+       message.channel.send(":tada: | **" + message.author.username + "** vous souhaite la bienvenue :bvn: !");
     }
  });
 
@@ -695,7 +685,7 @@ bot.on('message', message => {
  bot.on('message', message => {
     if (message.content.startsWith("/salut a")) {
        message.delete(1000);
-       message.channel.send(":wave: | **" + message.author.username + "** vous fait un coucou à" + message.mentions.members.first());
+       message.channel.send(":wave: | **" + message.author.username + "** vous fait un coucou à " + message.mentions.members.first());
     }
  });
 
