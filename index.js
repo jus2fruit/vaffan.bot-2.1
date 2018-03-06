@@ -693,9 +693,9 @@ bot.on('message', message => {
 
 
  bot.on('message', message => {
-    if (message.content.startsWith("/salut")) {
+    if (message.content.startWith("/salut a")) {
        message.delete(1000);
-       message.channel.send(":wave: | **" + message.mentions.members.first() + "** vous fait un coucou !");
+       message.channel.send(":wave: | **" + message.author.username + "** vous fait un coucou à" + message.mentions.members.first());
     }
  });
 
