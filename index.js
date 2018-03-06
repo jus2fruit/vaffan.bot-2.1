@@ -89,12 +89,12 @@ bot.on ('message' , message => {
    
 
     if (message.content.startsWith ("ping")) {
-        channel.send(`:ping_pong:  pong !`);
+        message.channel.send((`:ping_pong:  pong !`);
         console.log('ping pong !');
 
     }
     if (message.content.startsWith ("coco")) {
-        message.reply(`t foux ou quoi coco ?`);
+        message.reply(`t foux ou quoi coco ?:hatched_chick: `);
         console.log('ping pong !');
 
     }
