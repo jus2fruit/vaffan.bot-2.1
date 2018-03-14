@@ -512,7 +512,7 @@ bot.on ('message' , message => {
         
         console.log("Commande hug")
         random2(1, 10);
-
+	let hug = message.mentions.members.first().user.username
 
         if (randnum2 == 1){
             var hug_embed = new discord.RichEmbed()
